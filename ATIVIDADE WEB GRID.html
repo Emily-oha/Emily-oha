@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Carros - Grid</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            display: grid;
+            height: 100vh;
+
+            grid-template-columns: 180px 1fr;
+            grid-template-rows: 70px 1fr 50px;
+
+            grid-template-areas:
+                "header header"
+                "menu conteudo"
+                "footer footer";
+        }
+
+        header {
+            grid-area: header;
+            background: #1e1947;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+        }
+
+        nav {
+            grid-area: menu;
+            background: #151552;
+            color: white;
+            padding: 2cqh;
+        }
+
+        main {
+            grid-area: conteudo;
+            background: #595a87;
+            padding: 20px;
+            color: rgb(255, 255, 255);
+        }
+
+        footer {
+            grid-area: footer;
+            background: #030a2f;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 300px;
+            height: 450px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>Catálogo</header>
+
+    <nav>
+        <p>Modelos:</p>
+        <ul>
+            <li>Porsche 911 GT3 RS</li><br>
+            <li>Mustang Shelby GT500</li><br>
+            <li>Mustang Fastback 1967</li><br>
+            <li>McLaren Senna</li><br>
+            <li>Nissan Skyline GT-R R34</li><br>
+            <li>Mazda Miata</li><br>
+            <li>Chevrolet Impala 1967</li><br>
+            <li>AUDI R8</li><br>
+            <li>Koenigsegg Jesko</li><br>
+            <li>Lamborghini Countach 1980</li><br>
+            <li>F40</li><br>
+            <li>Ferrari Testarossa</li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2><strong>Bem-Vindo!</strong></h2>
+
+        <img src="MCQUEEN.png">
+        <img src="Mustang Shelby GT500 2024.jpg">
+        <img src="MustangFastback67.jpg">
+        <img src="MCLaren Senna.jpg">
+        <img src="Nissan Skyline GT-R R34.jpg">
+        <img src="Mazda Miata.jpg">
+        <img src="Impala67.jpg">
+        <img src="AUDI R8.jpg">
+        <img src="Koenigsegg Jesko.jpg">
+        <img src="Lamborghini Countach 1980.jpg">
+        <img src="F40.jpg">
+        <img src="Ferrari Testarossa.jpg">
+
+    </main>
+
+    <footer>Trabalho Grid</footer>
+</body>
+</html>
