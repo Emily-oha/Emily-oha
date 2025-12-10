@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Carros - Flex</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header, footer {
+            background: #47193e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .container {
+            display: flex; 
+            flex: 1;
+        }
+
+        .menu {
+            background: #3b1337;
+            color: white;
+            width: 180px;
+            padding: 20px;
+        }
+
+        .conteudo {
+            flex: 1;
+            background: #8a2472;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+     img {
+    width: 290px;
+    height: 450px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Catálogo</h1>
+    </header>
+
+    <main class="container">
+        <nav class="menu">
+            <p>Modelos:</p>
+            <ul>
+                <li>McQueen</li><br>
+                <li>Mustang Shelby GT500</li><br>
+                <li>Mustang Fastback 1967</li><br>
+                <li>McLaren Senna</li><br>
+                <li>KATCHAU</li><br>
+                <li>Camaro LTI</li><br>
+                <li>Porsche 991 GT3 RS</li><br>
+                <li>Nissan Skyline GT-R R34</li>
+            </ul>
+        </nav>
+
+        <section class="conteudo">
+            <strong><h2 style="color: rgb(255, 255, 255);">Bem-Vindo!</h2></strong>
+
+            <img src="MCQUEEN.png">
+            <img src="Mustang Shelby GT500 2024.jpg">
+            <img src="MustangFastback67.jpg">
+            <img src="MCLaren Senna.jpg">
+            <img src="relampago-mcqueen_capa.jpg">
+            <img src="CamaroLTI GEN6.jpg">
+            <img src="Porche 991 GT3 RS.jpg">
+            <img src="Nissan Skyline GT-R R34.jpg">
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Trabalho Flexbox</p>
+    </footer>
+</body>
+</html>
+
